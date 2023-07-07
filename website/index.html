@@ -18,9 +18,10 @@
 		-->
 
 		<!-- React 16 -->
-		<script crossorigin src="https://unpkg.com/react@16.10.2/umd/react.production.min.js"></script>
-		<!-- <script crossorigin src="https://unpkg.com/react@16.10.2/umd/react.development.js"></script> -->
-		<script crossorigin src="https://unpkg.com/react-dom@16.10.2/umd/react-dom.production.min.js"></script>
+		<!-- <script crossorigin src="https://unpkg.com/react@16.10.2/umd/react.production.min.js"></script> -->
+		<script crossorigin src="https://unpkg.com/react@16.10.2/umd/react.development.js"></script>
+		<!-- <script crossorigin src="https://unpkg.com/react-dom@16.10.2/umd/react-dom.production.min.js"></script> -->
+		<script crossorigin src="https://unpkg.com/react-dom@16.10.2/umd/react-dom.development.js"></script>
 
 		<!-- PropTypes -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.7.2/prop-types.min.js"></script>
@@ -1357,11 +1358,11 @@ console.log("+" + getCountryCallingCode("US"))
 										  value={this.state.customCountry}
 										  onChange={event => this.setState({ customCountry: event.target.value || undefined })}>
 										  <option value="">
-										    {PhoneInput.defaultProps.labels['ZZ']}
+										    {en['ZZ']}
 										  </option>
 										  {getCountries().map((country) => (
 										    <option key={country} value={country}>
-										      {PhoneInput.defaultProps.labels[country]} +{getCountryCallingCode(country)}
+										      {en[country]} +{getCountryCallingCode(country)}
 										    </option>
 										  ))}
 										</select>
