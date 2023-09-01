@@ -178,6 +178,16 @@
       "import": "./locale/he.json.js",
       "require": "./locale/he.json"
     },
+    "./locale/hy": {
+      "types": "./locale/hy.json.d.ts",
+      "import": "./locale/hy.json.js",
+      "require": "./locale/hy.json"
+    },
+    "./locale/hy.json": {
+      "types": "./locale/hy.json.d.ts",
+      "import": "./locale/hy.json.js",
+      "require": "./locale/hy.json"
+    },
     "./locale/it": {
       "types": "./locale/it.json.d.ts",
       "import": "./locale/it.json.js",
